@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 
 }
 
@@ -26,8 +26,9 @@
     align-content: center;
 }
 
-.nav img {
-    width: 4vw;
+.nav h1 a {   
+    color: #5a5044;
+    font-size: 2vw;
 }
 
 .nav ul {
@@ -83,7 +84,7 @@
     ;
     align-items: center;
     padding-top: 1vw;
-    
+
 
 }
 
@@ -147,8 +148,8 @@
     padding-bottom: 5vw;
     margin: 0 auto;
 }
-    
-.galeriaInicio img{
+
+.galeriaInicio img {
     width: 30vw;
     padding: 1vw;
 }
@@ -377,7 +378,7 @@
     /*Q NAV */
 
     .nav h1 a {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     .nav {
