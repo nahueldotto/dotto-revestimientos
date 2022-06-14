@@ -16,8 +16,7 @@
 /* NAV */
 
 .nav {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #5a504495;
+    background-color:#898785;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -27,6 +26,7 @@
 }
 
 .nav h1 a {   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #5a5044;
     font-size: 2vw;
 }
@@ -49,9 +49,13 @@
 
 .nav a {
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    font-family: 'Epilogue', sans-serif;
+    color: #000;
     font-size: 1vw;
+}
+
+.nav a:hover {
+    color: #5a5044;
 }
 
 /* main INDEX */
@@ -67,9 +71,10 @@
 
 
 .tituloInicio h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
     padding: 5%;
+    font-family: 'Epilogue', sans-serif;
 
 }
 
@@ -98,6 +103,7 @@
 .grillaInicio p {
     font-size: 3vw;
     padding: 2vw;
+    font-family: 'Epilogue', sans-serif;
 
 }
 
@@ -136,9 +142,10 @@
 }
 
 .tituloGaleriaInicio {
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
     padding: 5vw;
+    font-family: 'Epilogue', sans-serif;
 }
 
 .galeriaInicio {
