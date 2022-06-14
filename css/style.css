@@ -17,7 +17,7 @@
 
 .nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0005;
+    background-color: #5a504495;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -26,11 +26,8 @@
     align-content: center;
 }
 
-.nav h1 a {
-    font-size: 3vw;
-    color: #5a5044;
-    text-decoration: none;
-    text-align: center;
+.nav img {
+    width: 4vw;
 }
 
 .nav ul {
