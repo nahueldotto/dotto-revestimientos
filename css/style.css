@@ -2,8 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-
 }
 
 /* HEADER */
@@ -11,51 +9,6 @@
 .header {
     width: 100%;
     height: 20%;
-}
-
-/* NAV */
-
-.nav {
-    background-color:#898785;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    align-content: center;
-}
-
-.nav h1 a {   
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #5a5044;
-    font-size: 2vw;
-}
-
-.nav ul {
-    display: flex;
-    list-style: none;
-    width: auto;
-
-}
-
-.nav li {
-    padding: 1.5vw;
-    width: 100%;
-}
-
-.nav li:hover {
-    background-color: grey;
-}
-
-.nav a {
-    text-decoration: none;
-    font-family: 'Epilogue', sans-serif;
-    color: #000;
-    font-size: 1vw;
-}
-
-.nav a:hover {
-    color: #5a5044;
 }
 
 /* main INDEX */
