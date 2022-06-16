@@ -13,13 +13,12 @@
 
 /* main INDEX */
 
-.portada {
-    height: 25vw;
-    width: 100%;
-    background-image: url(../img/imagen1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+.portada img{
+   width: 100%;
+   filter: drop-shadow(-5px 12px 10px black);
+   
+
 }
 
 
