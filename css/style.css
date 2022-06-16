@@ -14,20 +14,26 @@
 /* main INDEX */
 
 
+
 .portada img{
    width: 100%;
-   filter: drop-shadow(-5px 12px 10px black);
+   filter: drop-shadow(-5px 10px 15px #000000);
    
 
 }
 
+.tituloInicio {
+    filter: drop-shadow( 1px 3px 2px #00000090);
+}
 
 .tituloInicio h1 {
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
-    padding: 5%;
-    font-family: 'Epilogue', sans-serif;
-
+    padding: 10vw 2vw 3vw 2vw;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 400;
+    color:#000000 ;    
+        
 }
 
 .grillaInicio {
@@ -47,21 +53,25 @@
 
 .grillaInicio img {
     height: 50vw;
-    padding: 1vw;
     margin: 0 auto;
+    border-radius: 5%;
+    filter: drop-shadow(5px 5px 5px #000);
+}
 
+.grillaInicio img:hover {
+    transform: scale(105%);
 }
 
 .grillaInicio p {
     font-size: 3vw;
     padding: 2vw;
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Varela Round', sans-serif;
 
 }
 
 .img1 {
     grid-area: img1;
-
+    
 }
 
 .img2 {
@@ -97,7 +107,7 @@
     font-size: 2vw;
     text-align: center;
     padding: 5vw;
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Questrial', sans-serif;
 }
 
 .galeriaInicio {
@@ -111,6 +121,7 @@
 .galeriaInicio img {
     width: 30vw;
     padding: 1vw;
+    border-radius: 5%;
 }
 
 
@@ -118,7 +129,6 @@
 
 .footer {
     background-color: black;
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     grid-area: footer;
     width: 100%;
