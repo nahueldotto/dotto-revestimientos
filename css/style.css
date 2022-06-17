@@ -30,7 +30,7 @@ main {
 }
 
 .tituloInicio {
-    filter: drop-shadow(1px 3px 2px #00000090);
+    filter: drop-shadow(1px 3px 2px #564E58);
 }
 
 .tituloInicio h1 {
@@ -39,7 +39,7 @@ main {
     padding: 10vw 2vw 3vw 2vw;
     font-family: 'Questrial', sans-serif;
     font-weight: 400;
-    color: #000000;
+    color: #564E58;
 
 }
 
@@ -71,10 +71,11 @@ main {
 }
 
 .grillaInicio p {
-    font-size: 2vw;
+    font-size: 2.5vw;
     padding: 2vw;
     font-family: 'Varela Round', sans-serif;
-
+    text-overflow: inherit;
+    text-align: center;
 }
 
 .img1 {
@@ -111,20 +112,27 @@ main {
     grid-area: txt4;
 }
 
+
 .tituloGaleriaInicio {
     text-align: center;
     margin: 0 auto;
     padding: 5vw 2vw 0vw 2vw;
     width: 50vw;
-    
-    
+
+
 }
 
 .tituloGaleriaInicio h2 {
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: 'Questrial', sans-serif;
     color: #564E58;
-   
+    filter: drop-shadow(1px 3px 2px #564E58);
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: #564E58;
 }
 
 .galeriaInicio {
@@ -142,6 +150,10 @@ main {
     margin: 0 auto;
 }
 
+.galeriaInicio img:hover {
+    transform: scale(105%);
+    transition: 0.3s;
+}
 
 /* FOOTER */
 
@@ -165,7 +177,6 @@ main {
 
 .footer a {
     font-size: 2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: white;
 }
@@ -197,7 +208,7 @@ main {
 }
 
 .txtWsp {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     text-align: center;
     color: #000;
     font-size: 2vw;
@@ -233,7 +244,7 @@ main {
 }
 
 .form p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 2vw;
     padding: 2%;
     text-align: center;
@@ -284,6 +295,12 @@ main {
 
 .grillaProductos h3 {
     padding: 1vw;
+    font-family: 'Questrial', sans-serif;
+}
+
+.grillaProductos p {
+    font-size: 2vw;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .grillaProductos div {
@@ -293,16 +310,16 @@ main {
 }
 
 .grillaProductos img {
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
 
 }
 
 .grillaProductos img:hover {
     transform: scale(110%);
-    padding: 1vw;
     transition: 0.3s;
 }
+
 
 /* seccion PRESUPUESTOS */
 
@@ -378,16 +395,22 @@ main {
 
 .galeria {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-items: center;
+    justify-content: center;
     width: 90%;
+    margin-top: 5vw;
+    margin: 0 auto;
 }
 
 .galeria img {
-    width: 60%;
+    width: 50%;
     padding: 1vw;
+    border-radius: 5%;
 }
+
 
 /* MEDIAS QUERIES */
 @media (max-width: 425px) {
