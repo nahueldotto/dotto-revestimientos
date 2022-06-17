@@ -22,15 +22,15 @@ main {
 }
 
 
-.portada img{
-   width: 100%;
-   filter: drop-shadow(-5px 10px 15px #000000);
-   
+.portada img {
+    width: 100%;
+    filter: drop-shadow(-5px 10px 15px #000000);
+
 
 }
 
 .tituloInicio {
-    filter: drop-shadow( 1px 3px 2px #00000090);
+    filter: drop-shadow(1px 3px 2px #00000090);
 }
 
 .tituloInicio h1 {
@@ -39,8 +39,8 @@ main {
     padding: 10vw 2vw 3vw 2vw;
     font-family: 'Questrial', sans-serif;
     font-weight: 400;
-    color:#000000 ;    
-        
+    color: #000000;
+
 }
 
 .grillaInicio {
@@ -79,7 +79,7 @@ main {
 
 .img1 {
     grid-area: img1;
-    
+
 }
 
 .img2 {
@@ -113,13 +113,18 @@ main {
 
 .tituloGaleriaInicio {
     text-align: center;
-    padding: 5vw 2vw 2vw 2vw;
+    margin: 0 auto;
+    padding: 5vw 2vw 0vw 2vw;
+    width: 50vw;
+    
     
 }
+
 .tituloGaleriaInicio h2 {
     font-size: 2vw;
     font-family: 'Questrial', sans-serif;
-    color: #5a5044;
+    color: #564E58;
+   
 }
 
 .galeriaInicio {
@@ -134,6 +139,7 @@ main {
     width: 30vw;
     padding: 1vw;
     border-radius: 5%;
+    margin: 0 auto;
 }
 
 
@@ -276,7 +282,7 @@ main {
     background-color: #FFFCF2;
 }
 
-.grillaProductos h3{
+.grillaProductos h3 {
     padding: 1vw;
 }
 
@@ -297,6 +303,7 @@ main {
     padding: 1vw;
     transition: 0.3s;
 }
+
 /* seccion PRESUPUESTOS */
 
 .presupuestos {
