@@ -11,8 +11,15 @@
     height: 20%;
 }
 
+nav {
+    background-color: #564E58;
+}
+
 /* main INDEX */
 
+main {
+    background-color: #FFFCF2;
+}
 
 
 .portada img{
@@ -52,18 +59,19 @@
 }
 
 .grillaInicio img {
-    height: 50vw;
+    height: 35vw;
     margin: 0 auto;
     border-radius: 5%;
     filter: drop-shadow(5px 5px 5px #000);
 }
 
 .grillaInicio img:hover {
-    transform: scale(105%);
+    transform: scale(115%);
+    transition: 0.3s;
 }
 
 .grillaInicio p {
-    font-size: 3vw;
+    font-size: 2vw;
     padding: 2vw;
     font-family: 'Varela Round', sans-serif;
 
@@ -104,10 +112,14 @@
 }
 
 .tituloGaleriaInicio {
-    font-size: 2vw;
     text-align: center;
-    padding: 5vw;
+    padding: 5vw 2vw 2vw 2vw;
+    
+}
+.tituloGaleriaInicio h2 {
+    font-size: 2vw;
     font-family: 'Questrial', sans-serif;
+    color: #5a5044;
 }
 
 .galeriaInicio {
@@ -128,7 +140,7 @@
 /* FOOTER */
 
 .footer {
-    background-color: black;
+    background-color: #564E58;
     text-align: center;
     grid-area: footer;
     width: 100%;
@@ -162,7 +174,7 @@
     grid-template-areas:
         "contacto formulario";
     width: 100%;
-    background-color: #5a504475;
+    background-color: #FFFCF2;
     justify-items: center;
     align-items: center;
 }
@@ -240,9 +252,9 @@
     width: 100%;
     margin: 2%;
     height: 90%;
-    border: solid white;
     border-radius: 10px;
     outline: none;
+    border-width: 1px;
 
 }
 
@@ -261,7 +273,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #5a504470;
+    background-color: #FFFCF2;
 }
 
 .grillaProductos h3{
@@ -292,7 +304,7 @@
     flex-direction: column;
     padding: 3vw;
     align-items: center;
-    background-color: #5a504475;
+    background-color: #FFFCF2;
 }
 
 .presupuestos p {
@@ -332,7 +344,7 @@
     border-radius: 1vw;
     padding: 1vw;
     font-size: 1vw;
-    border-width: 0;
+    border-width: 1px;
     outline: none;
 }
 
@@ -354,7 +366,7 @@
 /* SECCION GALERIA DE FOTOS */
 
 .mainGaleria {
-    background-color: #5a504470;
+    background-color: #FFFCF2;
 }
 
 .galeria {
