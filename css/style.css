@@ -15,12 +15,24 @@ nav {
     background-color: #564E58;
 }
 
+.logo {
+    font-size: 2.5vw;
+    padding: 0%;
+}
+
+.nav-item a {
+    font-size: 1vw;
+}
+
+.navbar a:hover {
+    transform: scale(110%);
+}
+
 /* main INDEX */
 
 main {
     background-color: #FFFCF2;
 }
-
 
 .portada img {
     width: 100%;
@@ -61,7 +73,7 @@ main {
 .grillaInicio img {
     height: 35vw;
     margin: 0 auto;
-    border-radius: 5%;
+    border-radius: 1%;
     filter: drop-shadow(5px 5px 5px #000);
 }
 
@@ -71,7 +83,7 @@ main {
 }
 
 .grillaInicio p {
-    font-size: 2.5vw;
+    font-size: 2vw;
     padding: 2vw;
     font-family: 'Varela Round', sans-serif;
     text-overflow: inherit;
@@ -138,22 +150,46 @@ main {
 .galeriaInicio {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 80%;
     padding-bottom: 5vw;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .galeriaInicio img {
-    width: 30vw;
-    padding: 1vw;
-    border-radius: 5%;
+    width: 20vw;
+    border-radius: 2%;
     margin: 0 auto;
+    
 }
 
 .galeriaInicio img:hover {
-    transform: scale(105%);
+    transform: scale(110%);
+    filter: drop-shadow(5px 5px 5px #000);
     transition: 0.3s;
 }
+
+/* NEWSLETTER */
+
+.newsletter {
+    display: flex;
+    width: 100%;
+    background-color:#564E5875;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.newsletter p{
+    font-size: 1vw;
+    margin: 0;
+}
+
+.newsletter input {
+    margin: 1vw;
+    font-size: 1vw;
+}
+
 
 /* FOOTER */
 
