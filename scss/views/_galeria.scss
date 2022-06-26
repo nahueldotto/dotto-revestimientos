@@ -1,0 +1,30 @@
+/* SECCION GALERIA DE FOTOS */
+
+.mainGaleria {
+    background-color: #FFFCF2;
+  
+    h4 {
+      margin-top: 8vw;
+      text-align: center;
+      font-family: 'Questrial', sans-serif;
+      color: #564E58;
+      filter: drop-shadow(1px 3px 2px #564E58);
+    }
+  }
+  
+  .galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  
+    img {
+      width: 50%;
+      padding: 1vw;
+      border-radius: 5%;
+      margin-top: 5vw;
+    }
+  }
+  

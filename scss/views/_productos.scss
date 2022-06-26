@@ -1,0 +1,35 @@
+/* seccion PRODUCTOS */
+
+.grillaProductos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFFCF2;
+  
+    h3 {
+      padding: 1vw;
+      font-family: 'Questrial', sans-serif;
+    }
+  
+    p {
+      font-size: 2vw;
+      font-family: 'Varela Round', sans-serif;
+    }
+  
+    div {
+      margin: 0 auto;
+      padding: 10vw;
+      text-align: center;
+    }
+  
+    img {
+      width: 80%;
+      border-radius: 10px;
+  
+      &:hover {
+        transform: scale(110%);
+        transition: 0.3s;
+      }
+    }
+  }
+  

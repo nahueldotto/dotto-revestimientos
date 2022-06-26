@@ -1,292 +1,279 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 /* HEADER */
-
 .header {
-    width: 100%;
-    height: 20%;
-}
+  width: 100%;
+  height: 20%; }
 
 nav {
-    background-color: #564E58;
-}
+  background-color: #564E58; }
 
 .logo {
-    font-size: 2.5vw;
-    padding: 0%;
-}
+  font-size: 2.5vw;
+  padding: 0%; }
 
 .nav-item a {
-    font-size: 1vw;
-}
+  font-size: 1vw; }
 
 .navbar a:hover {
-    transform: scale(110%);
-}
+  transform: scale(110%); }
+
+/* MEDIAS QUERIES */
+@media (max-width: 425px) {
+  /*Q NAV */
+  .nav {
+    flex-direction: column; }
+    .nav h1 a {
+      font-size: 5vw; }
+    .nav li {
+      padding: 3vw; }
+    .nav a {
+      font-size: 3vw; } }
+
+/* FOOTER */
+.footer {
+  background-color: #564E58;
+  text-align: center;
+  grid-area: footer;
+  width: 100%;
+  justify-content: center; }
+  .footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none; }
+  .footer li {
+    padding: 0.5rem; }
+  .footer a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white; }
+
+/* MEDIAS QUERIES */
+@media (max-width: 425px) {
+  /*Q FOOTER */
+  .footer ul li {
+    padding: 2% 3% 2% 3%; }
+  .footer a {
+    font-size: 8vw; } }
 
 /* main INDEX */
-
 main {
-    background-color: #FFFCF2;
-}
+  background-color: #FFFCF2; }
 
 .portada img {
-    width: 100%;
-    filter: drop-shadow(-5px 10px 15px #000000);
-
-
-}
+  width: 100%;
+  filter: drop-shadow(-5px 10px 15px #000000); }
 
 .tituloInicio {
-    filter: drop-shadow(1px 3px 2px #564E58);
-}
-
-.tituloInicio h1 {
+  filter: drop-shadow(1px 3px 2px #564E58); }
+  .tituloInicio h1 {
     font-size: 4vw;
     text-align: center;
     padding: 10vw 2vw 3vw 2vw;
     font-family: 'Questrial', sans-serif;
     font-weight: 400;
-    color: #564E58;
-
-}
+    color: #564E58; }
 
 .grillaInicio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "img1 txt1"
-        "txt2 img2"
-        "img3 txt3"
-        "txt4 img4"
-    ;
-    align-items: center;
-    padding-top: 1vw;
-
-
-}
-
-.grillaInicio img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img1 txt1" "txt2 img2" "img3 txt3" "txt4 img4";
+  align-items: center;
+  padding-top: 1vw; }
+  .grillaInicio img {
     height: 35vw;
     margin: 0 auto;
     border-radius: 1%;
-    filter: drop-shadow(5px 5px 5px #000);
-}
-
-.grillaInicio img:hover {
-    transform: scale(115%);
-    transition: 0.3s;
-}
-
-.grillaInicio p {
+    filter: drop-shadow(5px 5px 5px #000); }
+    .grillaInicio img:hover {
+      transform: scale(115%);
+      transition: 0.3s; }
+  .grillaInicio p {
     font-size: 2vw;
     padding: 2vw;
     font-family: 'Varela Round', sans-serif;
     text-overflow: inherit;
-    text-align: center;
-}
+    text-align: center; }
 
 .img1 {
-    grid-area: img1;
-
-}
+  grid-area: img1; }
 
 .img2 {
-    grid-area: img2;
-
-}
+  grid-area: img2; }
 
 .img3 {
-    grid-area: img3;
-}
+  grid-area: img3; }
 
 .img4 {
-    grid-area: img4;
-}
+  grid-area: img4; }
 
 .txt1 {
-    grid-area: txt1;
-}
+  grid-area: txt1; }
 
 .txt2 {
-    grid-area: txt2;
-}
+  grid-area: txt2; }
 
 .txt3 {
-    grid-area: txt3;
-}
+  grid-area: txt3; }
 
 .txt4 {
-    grid-area: txt4;
-}
-
+  grid-area: txt4; }
 
 .tituloGaleriaInicio {
-    text-align: center;
-    margin: 0 auto;
-    padding: 5vw 2vw 0vw 2vw;
-    width: 50vw;
-
-
-}
-
-.tituloGaleriaInicio h2 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5vw 2vw 0vw 2vw;
+  width: 50vw; }
+  .tituloGaleriaInicio h2 {
     font-size: 3vw;
     font-family: 'Questrial', sans-serif;
     color: #564E58;
-    filter: drop-shadow(1px 3px 2px #564E58);
-
-}
+    filter: drop-shadow(1px 3px 2px #564E58); }
 
 .btn a {
-    text-decoration: none;
-    color: #564E58;
-}
+  text-decoration: none;
+  color: #564E58; }
 
 .galeriaInicio {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    padding-bottom: 5vw;
-    margin: 0 auto;
-    justify-content: center;
-}
-
-.galeriaInicio img {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding-bottom: 5vw;
+  margin: 0 auto;
+  justify-content: center; }
+  .galeriaInicio img {
     width: 20vw;
     border-radius: 2%;
-    margin: 0 auto;
-    
-}
-
-.galeriaInicio img:hover {
-    transform: scale(110%);
-    filter: drop-shadow(5px 5px 5px #000);
-    transition: 0.3s;
-}
+    margin: 0 auto; }
+    .galeriaInicio img:hover {
+      transform: scale(110%);
+      filter: drop-shadow(5px 5px 5px #000);
+      transition: 0.3s; }
 
 /* NEWSLETTER */
-
 .newsletter {
-    display: flex;
-    width: 100%;
-    background-color:#564E5875;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.newsletter p{
+  display: flex;
+  width: 100%;
+  background-color: #564E5875;
+  justify-content: center;
+  align-items: center; }
+  .newsletter p {
     font-size: 1vw;
-    margin: 0;
-}
-
-.newsletter input {
+    margin: 0; }
+  .newsletter input {
     margin: 1vw;
-    font-size: 1vw;
-}
+    font-size: 1vw; }
 
+/* MEDIAS QUERIES */
+@media (max-width: 425px) {
+  /* Q main INDEX */
+  .main a {
+    font-size: 4vw; }
+  .main li:hover {
+    background-color: grey; }
+  .main a:hover {
+    color: #5a5044; } }
 
-/* FOOTER */
+/* seccion PRODUCTOS */
+.grillaProductos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #FFFCF2; }
+  .grillaProductos h3 {
+    padding: 1vw;
+    font-family: 'Questrial', sans-serif; }
+  .grillaProductos p {
+    font-size: 2vw;
+    font-family: 'Varela Round', sans-serif; }
+  .grillaProductos div {
+    margin: 0 auto;
+    padding: 10vw;
+    text-align: center; }
+  .grillaProductos img {
+    width: 80%;
+    border-radius: 10px; }
+    .grillaProductos img:hover {
+      transform: scale(110%);
+      transition: 0.3s; }
 
-.footer {
-    background-color: #564E58;
+/* SECCION GALERIA DE FOTOS */
+.mainGaleria {
+  background-color: #FFFCF2; }
+  .mainGaleria h4 {
+    margin-top: 8vw;
     text-align: center;
-    grid-area: footer;
-    width: 100%;
-    justify-content: center;
-}
+    font-family: 'Questrial', sans-serif;
+    color: #564E58;
+    filter: drop-shadow(1px 3px 2px #564E58); }
 
-.footer ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.footer li {
-    padding: 0.5rem;
-}
-
-.footer a {
-    font-size: 2rem;
-    text-decoration: none;
-    color: white;
-}
-
+.galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto; }
+  .galeria img {
+    width: 50%;
+    padding: 1vw;
+    border-radius: 5%;
+    margin-top: 5vw; }
 
 /* seccion CONTACTO */
-
-
 .mainContacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "contacto formulario";
-    width: 100%;
-    background-color: #FFFCF2;
-    justify-items: center;
-    align-items: center;
-}
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contacto formulario";
+  width: 100%;
+  background-color: #FFFCF2;
+  justify-items: center;
+  align-items: center; }
 
 .contacto {
-    grid-area: contacto;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 3%;
-
-}
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 3%; }
 
 .txtWsp {
-    font-family: 'Varela Round', sans-serif;
-    text-align: center;
-    color: #000;
-    font-size: 2vw;
-    padding: 0% 5% 5% 5%;
-}
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  color: #000;
+  font-size: 2vw;
+  padding: 0% 5% 5% 5%; }
 
 .wsp {
-    text-align: center;
-    padding: 2%;
-    width: 100%;
-
-}
-
-.wsp a {
+  text-align: center;
+  padding: 2%;
+  width: 100%; }
+  .wsp a {
     text-decoration: none;
     font-size: 3vw;
-    color: #5a5044;
-
-}
+    color: #5a5044; }
 
 .formulario {
-    grid-area: formulario;
-    width: 90%;
-    padding: 2%;
-
-}
+  grid-area: formulario;
+  width: 90%;
+  padding: 2%; }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-
-.form p {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center; }
+  .form p {
     font-family: 'Varela Round', sans-serif;
     font-size: 2vw;
     padding: 2%;
-    text-align: center;
-}
-
-.form input {
+    text-align: center; }
+  .form input {
     height: 3vw;
     width: 80%;
     border-radius: 15px;
@@ -295,86 +282,60 @@ main {
     margin-top: 1vw;
     border-width: 0px;
     font-size: 1.5vw;
-    outline: none;
-}
-
-
-
-.form textarea {
+    outline: none; }
+  .form textarea {
     font-size: 1.5vw;
     width: 100%;
     margin: 2%;
     height: 90%;
     border-radius: 10px;
     outline: none;
-    border-width: 1px;
+    border-width: 1px; }
+  .form input[type=submit] {
+    width: 50%; }
+    .form input[type=submit]:hover {
+      background-color: #5a5044;
+      color: #999; }
 
-}
-
-.form input[type=submit] {
-    width: 50%;
-}
-
-.form input[type=submit]:hover {
-    background-color: #5a5044;
-    color: #999;
-}
-
-/* seccion PRODUCTOS */
-
-.grillaProductos {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #FFFCF2;
-}
-
-.grillaProductos h3 {
-    padding: 1vw;
-    font-family: 'Questrial', sans-serif;
-}
-
-.grillaProductos p {
-    font-size: 2vw;
-    font-family: 'Varela Round', sans-serif;
-}
-
-.grillaProductos div {
-    margin: 0 auto;
-    padding: 10vw;
-    text-align: center;
-}
-
-.grillaProductos img {
+/* MEDIAS QUERIES */
+@media (max-width: 425px) {
+  /* Q SECCION CONTACTO */
+  .mainContacto {
+    grid-template-columns: 1fr;
+    grid-template-areas: "contacto" "formulario"; }
+  .contacto {
+    padding-top: 5%; }
+  .wsp a {
+    font-size: 10vw; }
+  .txtWsp {
+    font-size: 4vw; }
+  .form p {
+    font-size: 4vw; }
+  .form input {
+    height: 6vw;
     width: 80%;
-    border-radius: 10px;
-
-}
-
-.grillaProductos img:hover {
-    transform: scale(110%);
-    transition: 0.3s;
-}
-
+    border-radius: 5px;
+    margin-top: 2vw;
+    font-size: 3vw; }
+  .form textarea {
+    font-size: 3vw;
+    width: 80%;
+    margin: 4%;
+    border-radius: 5px; } }
 
 /* seccion PRESUPUESTOS */
-
 .presupuestos {
-    display: flex;
-    flex-direction: column;
-    padding: 3vw;
-    align-items: center;
-    background-color: #FFFCF2;
-}
-
-.presupuestos p {
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  align-items: center;
+  background-color: #FFFCF2; }
+  .presupuestos p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2vw;
     text-align: center;
-    padding: 1vw;
-}
-
-.presupuestos input[type=text] {
+    padding: 1vw; }
+  .presupuestos input[type=text], .presupuestos input[type=email] {
     padding: 1vw;
     margin: 1vw;
     border-radius: 1vw;
@@ -383,201 +344,41 @@ main {
     font-size: 1vw;
     background-color: #c6c6c6;
     outline: none;
-    border-width: 0;
-}
-
-.presupuestos input[type=email] {
-    padding: 1vw;
-    margin: 1vw;
-    border-radius: 1vw;
-    width: 50%;
-    text-align: center;
-    font-size: 1vw;
-    background-color: #c6c6c6;
-    outline: none;
-    border-width: 0;
-
-}
-
-.presupuestos textarea {
+    border-width: 0; }
+  .presupuestos textarea {
     width: 50%;
     border-radius: 1vw;
     padding: 1vw;
     font-size: 1vw;
     border-width: 1px;
-    outline: none;
-}
-
-.presupuestos input[type=submit] {
+    outline: none; }
+  .presupuestos input[type=submit] {
     width: 10%;
     font-size: 1vw;
     padding: 0.5vw;
     margin-top: 1vw;
     background-color: #5a504460;
-    border-radius: 1vw;
-
-}
-
-.presupuestos input[type=submit]:hover {
-    background-color: #5a5044;
-    color: #999;
-}
-
-/* SECCION GALERIA DE FOTOS */
-
-.mainGaleria {
-    background-color: #FFFCF2;
-}
-
-.mainGaleria h4 {
-    margin-top: 8vw;
-    text-align: center;
-    font-family: 'Questrial', sans-serif;
-    color: #564E58;
-    filter: drop-shadow(1px 3px 2px #564E58);
-}
-
-.galeria {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.galeria img {
-    width: 50%;
-    padding: 1vw;
-    border-radius: 5%;
-    margin-top: 5vw;
-}
-
+    border-radius: 1vw; }
+    .presupuestos input[type=submit]:hover {
+      background-color: #5a5044;
+      color: #999; }
 
 /* MEDIAS QUERIES */
 @media (max-width: 425px) {
-
-
-    /*Q NAV */
-
-    .nav h1 a {
-        font-size: 5vw;
-    }
-
-    .nav {
-        flex-direction: column;
-    }
-
-    .nav li {
-        padding: 3vw;
-    }
-
-    .nav a {
-        font-size: 3vw;
-    }
-
-    /*Q FOOTER */
-
-    .footer ul li {
-        padding: 2% 3% 2% 3%;
-    }
-
-    .footer a {
-        font-size: 8vw;
-    }
-
-    /* Q main INDEX */
-
-
-    .main a {
-        font-size: 4vw;
-    }
-
-    .main li:hover {
-        background-color: grey;
-    }
-
-    .main a:hover {
-        color: #5a5044;
-    }
-
-
-    /* Q SECCION CONTACTO */
-
-    .mainContacto {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "contacto"
-            "formulario";
-    }
-
-    .contacto {
-        padding-top: 5%;
-    }
-
-    .wsp a {
-        font-size: 10vw;
-    }
-
-    .txtWsp {
-
-        font-size: 4vw;
-
-    }
-
-
-    .form p {
-        font-size: 4vw;
-    }
-
-    .form input {
-        height: 6vw;
-        width: 80%;
-        border-radius: 5px;
-        margin-top: 2vw;
-        font-size: 3vw;
-
-    }
-
-    .form textarea {
-        font-size: 3vw;
-        width: 80%;
-        margin: 4%;
-        border-radius: 5px;
-
-    }
-
-    /* Q PRESUPUESTOS */
-
-    .presupuestos {
-        display: flex;
-        flex-direction: column;
-        padding: 3vw;
-        align-items: center;
-        background-color: #5a504475;
-    }
-
+  /* Q PRESUPUESTOS */
+  .presupuestos {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    align-items: center;
+    background-color: #5a504475; }
     .presupuestos p {
-        font-size: 3vw;
-    }
-
-    .presupuestos input[type=text] {
-        font-size: 2vw;
-    }
-
-    .presupuestos input[type=email] {
-        font-size: 2vw;
-
-    }
-
+      font-size: 3vw; }
+    .presupuestos input[type=text], .presupuestos input[type=email] {
+      font-size: 2vw; }
     .presupuestos textarea {
-        height: 50%;
-        font-size: 2vw;
-    }
-
+      height: 50%;
+      font-size: 2vw; }
     .presupuestos input[type=submit] {
-        width: 15%;
-        font-size: 2vw;
-    }
-
-}
+      width: 15%;
+      font-size: 2vw; } }

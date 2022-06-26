@@ -1,0 +1,44 @@
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 20%;
+  }
+  
+  nav {
+    background-color: #564E58;
+  }
+  
+  .logo {
+    font-size: 2.5vw;
+    padding: 0%;
+  }
+  
+  .nav-item a {
+    font-size: 1vw;
+  }
+  
+  .navbar a:hover {
+    transform: scale(110%);
+  }
+
+  /* MEDIAS QUERIES */
+@media (max-width: 425px) {
+    /*Q NAV */
+  
+    .nav {
+      h1 a {
+        font-size: 5vw;
+      }
+  
+      flex-direction: column;
+  
+      li {
+        padding: 3vw;
+      }
+  
+      a {
+        font-size: 3vw;
+      }
+    }
+}
