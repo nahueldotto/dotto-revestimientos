@@ -14,12 +14,8 @@
     padding: 0%;
   }
   
-  .nav-item a {
-    font-size: 1vw;
-  }
-  
-  .navbar a:hover {
-    transform: scale(110%);
+  .nav-link:hover {
+    background-color: grey;
   }
 
   /* MEDIAS QUERIES */
