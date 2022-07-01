@@ -1,24 +1,17 @@
 /* main INDEX */
 
-main {
-    background-color: #FFFCF2;
-  }
-  
+ 
   .portada img {
     width: 100%;
     filter: drop-shadow((-5px) 10px 15px #000000);
   }
   
   .tituloInicio {
-    filter: drop-shadow(1px 3px 2px #564E58);
   
     h1 {
-      font-size: 4vw;
-      text-align: center;
-      padding: 10vw 2vw 3vw 2vw;
-      font-family: 'Questrial', sans-serif;
-      font-weight: 400;
-      color: #564E58;
+     @extend %titulos;
+     padding-top: 10%;
+     padding-bottom: 5%;
     }
   }
   

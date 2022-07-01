@@ -1,18 +1,19 @@
 
 // faltan los imports
-
+@import "./views/index";
 @import "./base/reset";
 @import "./base/typo";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./views/index";
 @import "./views/productos";
 @import "./views/galeria";
 @import "./views/contacto";
 @import "./views/presupuestos";
 @import "./base/colors";
+@import "./base/extend";
 
 body {
     min-height: 100vh;
     position: relative;
+    background-color: $colorSecundario;
 }

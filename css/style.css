@@ -1,3 +1,98 @@
+/* main INDEX */
+.portada img {
+  width: 100%;
+  filter: drop-shadow(-5px 10px 15px #000000); }
+
+.tituloInicio h1 {
+  padding-top: 10%;
+  padding-bottom: 5%; }
+
+.grillaInicio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img1 txt1" "txt2 img2" "img3 txt3" "txt4 img4";
+  align-items: center;
+  padding-top: 1vw; }
+  .grillaInicio img {
+    height: 35vw;
+    margin: 0 auto;
+    border-radius: 1%;
+    filter: drop-shadow(5px 5px 5px #000); }
+    .grillaInicio img:hover {
+      transform: scale(115%);
+      transition: 0.3s; }
+  .grillaInicio p {
+    font-size: 2vw;
+    padding: 2vw;
+    font-family: 'Varela Round', sans-serif;
+    text-overflow: inherit;
+    text-align: center; }
+
+.img1 {
+  grid-area: img1; }
+
+.img2 {
+  grid-area: img2; }
+
+.img3 {
+  grid-area: img3; }
+
+.img4 {
+  grid-area: img4; }
+
+.txt1 {
+  grid-area: txt1; }
+
+.txt2 {
+  grid-area: txt2; }
+
+.txt3 {
+  grid-area: txt3; }
+
+.txt4 {
+  grid-area: txt4; }
+
+.tituloGaleriaInicio {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5vw 2vw 0vw 2vw;
+  width: 50vw; }
+  .tituloGaleriaInicio h2 {
+    font-size: 3vw;
+    font-family: 'Questrial', sans-serif;
+    color: #564E58;
+    filter: drop-shadow(1px 3px 2px #564E58); }
+
+.btn a {
+  text-decoration: none;
+  color: #564E58; }
+
+.galeriaInicio {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding-bottom: 5vw;
+  margin: 0 auto;
+  justify-content: center; }
+  .galeriaInicio img {
+    width: 20vw;
+    border-radius: 2%;
+    margin: 0 auto; }
+    .galeriaInicio img:hover {
+      transform: scale(110%);
+      filter: drop-shadow(5px 5px 5px #000);
+      transition: 0.3s; }
+
+/* MEDIAS QUERIES */
+@media (max-width: 425px) {
+  /* Q main INDEX */
+  .main a {
+    font-size: 4vw; }
+  .main li:hover {
+    background-color: grey; }
+  .main a:hover {
+    color: #5a5044; } }
+
 * {
   padding: 0;
   margin: 0;
@@ -91,110 +186,6 @@ nav {
   .redes a:hover {
     color: grey; }
 
-/* main INDEX */
-main {
-  background-color: #FFFCF2; }
-
-.portada img {
-  width: 100%;
-  filter: drop-shadow(-5px 10px 15px #000000); }
-
-.tituloInicio {
-  filter: drop-shadow(1px 3px 2px #564E58); }
-  .tituloInicio h1 {
-    font-size: 4vw;
-    text-align: center;
-    padding: 10vw 2vw 3vw 2vw;
-    font-family: 'Questrial', sans-serif;
-    font-weight: 400;
-    color: #564E58; }
-
-.grillaInicio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "img1 txt1" "txt2 img2" "img3 txt3" "txt4 img4";
-  align-items: center;
-  padding-top: 1vw; }
-  .grillaInicio img {
-    height: 35vw;
-    margin: 0 auto;
-    border-radius: 1%;
-    filter: drop-shadow(5px 5px 5px #000); }
-    .grillaInicio img:hover {
-      transform: scale(115%);
-      transition: 0.3s; }
-  .grillaInicio p {
-    font-size: 2vw;
-    padding: 2vw;
-    font-family: 'Varela Round', sans-serif;
-    text-overflow: inherit;
-    text-align: center; }
-
-.img1 {
-  grid-area: img1; }
-
-.img2 {
-  grid-area: img2; }
-
-.img3 {
-  grid-area: img3; }
-
-.img4 {
-  grid-area: img4; }
-
-.txt1 {
-  grid-area: txt1; }
-
-.txt2 {
-  grid-area: txt2; }
-
-.txt3 {
-  grid-area: txt3; }
-
-.txt4 {
-  grid-area: txt4; }
-
-.tituloGaleriaInicio {
-  text-align: center;
-  margin: 0 auto;
-  padding: 5vw 2vw 0vw 2vw;
-  width: 50vw; }
-  .tituloGaleriaInicio h2 {
-    font-size: 3vw;
-    font-family: 'Questrial', sans-serif;
-    color: #564E58;
-    filter: drop-shadow(1px 3px 2px #564E58); }
-
-.btn a {
-  text-decoration: none;
-  color: #564E58; }
-
-.galeriaInicio {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  padding-bottom: 5vw;
-  margin: 0 auto;
-  justify-content: center; }
-  .galeriaInicio img {
-    width: 20vw;
-    border-radius: 2%;
-    margin: 0 auto; }
-    .galeriaInicio img:hover {
-      transform: scale(110%);
-      filter: drop-shadow(5px 5px 5px #000);
-      transition: 0.3s; }
-
-/* MEDIAS QUERIES */
-@media (max-width: 425px) {
-  /* Q main INDEX */
-  .main a {
-    font-size: 4vw; }
-  .main li:hover {
-    background-color: grey; }
-  .main a:hover {
-    color: #5a5044; } }
-
 /* seccion PRODUCTOS */
 .grillaProductos {
   display: flex;
@@ -223,12 +214,6 @@ main {
   background-color: #c6c6c6;
   min-height: 100vh;
   padding-top: 10%; }
-  .mainGaleria h1 {
-    margin: auto;
-    text-align: center;
-    font-family: 'Questrial', sans-serif;
-    color: #564E58;
-    filter: drop-shadow(1px 3px 2px #564E58); }
 
 .galeria {
   display: flex;
@@ -414,6 +399,14 @@ main {
       width: 15%;
       font-size: 2vw; } }
 
+.tituloInicio h1, .mainGaleria h1, .contacto h1, .presupuestos h1 {
+  font-size: 4vw;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+  color: #564E58;
+  filter: drop-shadow(1px 3px 2px #564E58); }
+
 body {
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+  background-color: #c6c6c6; }

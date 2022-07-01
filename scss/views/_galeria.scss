@@ -6,11 +6,7 @@
   padding-top: 10%;
 
   h1 {
-    margin: auto;
-    text-align: center;
-    font-family: 'Questrial', sans-serif;
-    color: #564E58;
-    filter: drop-shadow(1px 3px 2px #564E58);
+   @extend %titulos;
   }
 }
 
