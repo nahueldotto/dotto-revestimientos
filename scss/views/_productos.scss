@@ -4,15 +4,22 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #FFFCF2;
+    background-color: $colorSecundario;
+    padding-top: 10%;
+
+    h1 {
+      @extend %titulos;
+    }
+    
   
     h3 {
       padding: 1vw;
       font-family: 'Questrial', sans-serif;
+      font-size: 3vw;
     }
   
     p {
-      font-size: 2vw;
+      font-size: 1vw;
       font-family: 'Varela Round', sans-serif;
     }
   
@@ -23,7 +30,7 @@
     }
   
     img {
-      width: 80%;
+      width: 90%;
       border-radius: 10px;
   
       &:hover {

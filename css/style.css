@@ -191,19 +191,21 @@ nav {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #FFFCF2; }
+  background-color: #c6c6c6;
+  padding-top: 10%; }
   .grillaProductos h3 {
     padding: 1vw;
-    font-family: 'Questrial', sans-serif; }
+    font-family: 'Questrial', sans-serif;
+    font-size: 3vw; }
   .grillaProductos p {
-    font-size: 2vw;
+    font-size: 1vw;
     font-family: 'Varela Round', sans-serif; }
   .grillaProductos div {
     margin: 0 auto;
     padding: 10vw;
     text-align: center; }
   .grillaProductos img {
-    width: 80%;
+    width: 90%;
     border-radius: 10px; }
     .grillaProductos img:hover {
       transform: scale(110%);
@@ -399,7 +401,7 @@ nav {
       width: 15%;
       font-size: 2vw; } }
 
-.tituloInicio h1, .mainGaleria h1, .contacto h1, .presupuestos h1 {
+.tituloInicio h1, .grillaProductos h1, .mainGaleria h1, .contacto h1, .presupuestos h1 {
   font-size: 4vw;
   text-align: center;
   font-family: 'Questrial', sans-serif;
