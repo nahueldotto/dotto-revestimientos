@@ -5,7 +5,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "contacto formulario";
     width: 100%;
-    background-color: #FFFCF2;
+    min-height: 100vh;
+    background-color: $colorSecundario;
     justify-items: center;
     align-items: center;
   }
@@ -42,7 +43,7 @@
   
   .formulario {
     grid-area: formulario;
-    width: 90%;
+    width: 80%;
     padding: 2%;
   }
   
@@ -63,7 +64,7 @@
       height: 3vw;
       width: 80%;
       border-radius: 15px;
-      background-color: #c6c6c6;
+      background-color: white;
       text-align: center;
       margin-top: 1vw;
       border-width: 0px;
@@ -75,18 +76,24 @@
       font-size: 1.5vw;
       width: 100%;
       margin: 2%;
-      height: 90%;
+      height: 50%;
       border-radius: 10px;
       outline: none;
       border-width: 1px;
     }
   
     input[type=submit] {
-      width: 50%;
+      width: 30%;
+      font-size: 1vw;
+      padding: 0.5vw;
+      margin-top: 1vw;
+      background-color: #5a504460;
+      border: 1px solid #000;
+      border-radius: 1vw;
   
       &:hover {
-        background-color: #5a5044;
-        color: #999;
+        background-color: $colorSecundario;
+        color: $colorPrincipal;
       }
     }
   }

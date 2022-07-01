@@ -12,7 +12,7 @@ nav {
   background-color: #564E58; }
 
 .logo {
-  font-size: 2.5vw;
+  font-size: 2.5em;
   padding: 0%; }
 
 .nav-link:hover {
@@ -34,27 +34,59 @@ nav {
 .footer {
   background-color: #564E58;
   text-align: center;
-  grid-area: footer;
   width: 100%;
-  justify-content: center; }
-  .footer ul {
-    display: flex;
-    justify-content: center;
-    list-style: none; }
-  .footer li {
-    padding: 0.5rem; }
-  .footer a {
-    font-size: 2rem;
-    text-decoration: none;
-    color: white; }
+  justify-content: center;
+  position: absolute;
+  bottom: 0 auto; }
 
-/* MEDIAS QUERIES */
-@media (max-width: 425px) {
-  /*Q FOOTER */
-  .footer ul li {
-    padding: 2% 3% 2% 3%; }
-  .footer a {
-    font-size: 8vw; } }
+.menuFooter {
+  width: 100%; }
+  .menuFooter ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 0.5em; }
+    .menuFooter ul a {
+      margin-top: auto;
+      padding: 0.3em;
+      font-size: 1em;
+      text-decoration: none;
+      color: #c6c6c6; }
+      .menuFooter ul a:hover {
+        background-color: grey; }
+
+/* NEWSLETTER */
+.newsletter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+  .newsletter p {
+    font-size: 1em;
+    margin: 0;
+    color: #c6c6c6; }
+  .newsletter input {
+    margin: 0.5em;
+    padding: 0.1em;
+    font-size: 1em;
+    text-align: center; }
+
+.redes ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none; }
+
+.redes li {
+  padding: 0.2rem; }
+
+.redes a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white; }
+  .redes a:hover {
+    color: grey; }
 
 /* main INDEX */
 main {
@@ -150,20 +182,6 @@ main {
       filter: drop-shadow(5px 5px 5px #000);
       transition: 0.3s; }
 
-/* NEWSLETTER */
-.newsletter {
-  display: flex;
-  width: 100%;
-  background-color: #564E5875;
-  justify-content: center;
-  align-items: center; }
-  .newsletter p {
-    font-size: 1vw;
-    margin: 0; }
-  .newsletter input {
-    margin: 1vw;
-    font-size: 1vw; }
-
 /* MEDIAS QUERIES */
 @media (max-width: 425px) {
   /* Q main INDEX */
@@ -226,7 +244,8 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "contacto formulario";
   width: 100%;
-  background-color: #FFFCF2;
+  min-height: 100vh;
+  background-color: #c6c6c6;
   justify-items: center;
   align-items: center; }
 
@@ -257,7 +276,7 @@ main {
 
 .formulario {
   grid-area: formulario;
-  width: 90%;
+  width: 80%;
   padding: 2%; }
 
 .form {
@@ -274,7 +293,7 @@ main {
     height: 3vw;
     width: 80%;
     border-radius: 15px;
-    background-color: #c6c6c6;
+    background-color: white;
     text-align: center;
     margin-top: 1vw;
     border-width: 0px;
@@ -284,15 +303,21 @@ main {
     font-size: 1.5vw;
     width: 100%;
     margin: 2%;
-    height: 90%;
+    height: 50%;
     border-radius: 10px;
     outline: none;
     border-width: 1px; }
   .form input[type=submit] {
-    width: 50%; }
+    width: 30%;
+    font-size: 1vw;
+    padding: 0.5vw;
+    margin-top: 1vw;
+    background-color: #5a504460;
+    border: 1px solid #000;
+    border-radius: 1vw; }
     .form input[type=submit]:hover {
-      background-color: #5a5044;
-      color: #999; }
+      background-color: #c6c6c6;
+      color: #564E58; }
 
 /* MEDIAS QUERIES */
 @media (max-width: 425px) {
@@ -326,7 +351,7 @@ main {
   flex-direction: column;
   padding: 3vw;
   align-items: center;
-  background-color: #FFFCF2; }
+  background-color: #c6c6c6; }
   .presupuestos p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2vw;
@@ -339,7 +364,7 @@ main {
     width: 50%;
     text-align: center;
     font-size: 1vw;
-    background-color: #c6c6c6;
+    background-color: white;
     outline: none;
     border-width: 0; }
   .presupuestos textarea {
@@ -355,10 +380,11 @@ main {
     padding: 0.5vw;
     margin-top: 1vw;
     background-color: #5a504460;
-    border-radius: 1vw; }
+    border-radius: 1vw;
+    border: 1px solid #000; }
     .presupuestos input[type=submit]:hover {
-      background-color: #5a5044;
-      color: #999; }
+      background-color: #c6c6c6;
+      color: #564E58; }
 
 /* MEDIAS QUERIES */
 @media (max-width: 425px) {
@@ -379,3 +405,7 @@ main {
     .presupuestos input[type=submit] {
       width: 15%;
       font-size: 2vw; } }
+
+body {
+  min-height: 100vh;
+  position: relative; }

@@ -5,7 +5,7 @@
     flex-direction: column;
     padding: 3vw;
     align-items: center;
-    background-color: #FFFCF2;
+    background-color: $colorSecundario;
   
     p {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -22,7 +22,7 @@
         width: 50%;
         text-align: center;
         font-size: 1vw;
-        background-color: #c6c6c6;
+        background-color: white;
         outline: none;
         border-width: 0;
       }
@@ -44,10 +44,11 @@
       margin-top: 1vw;
       background-color: #5a504460;
       border-radius: 1vw;
+      border: 1px solid #000;
   
       &:hover {
-        background-color: #5a5044;
-        color: #999;
+        background-color: $colorSecundario;
+        color: $colorPrincipal;
       }
     }
   }

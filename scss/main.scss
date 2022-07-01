@@ -11,3 +11,8 @@
 @import "./views/contacto";
 @import "./views/presupuestos";
 @import "./base/colors";
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
