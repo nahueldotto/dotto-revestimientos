@@ -37,7 +37,8 @@ nav {
   width: 100%;
   justify-content: center;
   position: absolute;
-  bottom: 0 auto; }
+  bottom: 0 auto;
+  padding-top: 2rem; }
 
 .menuFooter {
   width: 100%; }
@@ -69,7 +70,9 @@ nav {
     margin: 0.5em;
     padding: 0.1em;
     font-size: 1em;
-    text-align: center; }
+    text-align: center;
+    border-radius: 5px;
+    border-width: 0; }
 
 .redes ul {
   display: flex;
@@ -324,7 +327,8 @@ main {
   /* Q SECCION CONTACTO */
   .mainContacto {
     grid-template-columns: 1fr;
-    grid-template-areas: "contacto" "formulario"; }
+    grid-template-areas: "contacto" "formulario";
+    padding-top: 10%; }
   .contacto {
     padding-top: 5%; }
   .wsp a {
@@ -349,7 +353,9 @@ main {
 .presupuestos {
   display: flex;
   flex-direction: column;
-  padding: 3vw;
+  min-height: 100vh;
+  padding-top: 10%;
+  padding-bottom: 2rem;
   align-items: center;
   background-color: #c6c6c6; }
   .presupuestos p {
@@ -390,13 +396,7 @@ main {
 @media (max-width: 425px) {
   /* Q PRESUPUESTOS */
   .presupuestos {
-    display: flex;
-    flex-direction: column;
-    padding: 3vw;
-    align-items: center;
-    background-color: #5a504475; }
-    .presupuestos p {
-      font-size: 3vw; }
+    padding-top: 25%; }
     .presupuestos input[type=text], .presupuestos input[type=email] {
       font-size: 2vw; }
     .presupuestos textarea {

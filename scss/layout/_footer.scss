@@ -7,6 +7,7 @@
   justify-content: center;
   position: absolute;
   bottom: 0 auto;
+  padding-top: 2rem;
 }
 
 // Menu footer
@@ -54,6 +55,8 @@
     padding: 0.1em;
     font-size: 1em;
     text-align: center;
+    border-radius: 5px;
+    border-width: 0;
   }
 }
 
