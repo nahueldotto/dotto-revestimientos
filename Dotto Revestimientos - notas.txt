@@ -1,0 +1,25 @@
++
+CAMBIOS Y MEJORAS
++
+Cree carpetas para seccionar y agrupar los scss.
++
+Agrupe los html en carpeta pages.
++
+Cree variables de color
++
+Mejora de responsive en seccion galeria.
++
+Agregue extend.scss con stilo de titulos y los aplique en los h1 de cada seccion.
++
+Agregue archivo sitemap.xml
+
+SEO+++++
++
+Personalice etiquetas <title>
++
+Agregue h1 a todas los html
++
+Agregue keywords personalizadas para cada html.
++
+Agregue "description" a todos los html.
++
