@@ -13,7 +13,7 @@
 .grillaInicio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "img1 txt1"  "txt2 img2"  "img3 txt3"  "txt4 img4";
+  grid-template-areas: "img1 txt1" "txt2 img2" "img3 txt3" "txt4 img4";
   align-items: center;
   padding-top: 1vw; }
   .grillaInicio img {
@@ -88,13 +88,19 @@
 
 /* MEDIAS QUERIES */
 @media (max-width: 425px) {
-  /* Q main INDEX */
-  .main a {
-    font-size: 4vw; }
-  .main li:hover {
-    background-color: grey; }
-  .main a:hover {
-    color: #5a5044; } }
+  .portada img {
+    width: 100%;
+    margin-top: 50px; }
+  .grillaInicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "img1" "txt1" "txt2" "img2" "img3" "txt3" "txt4" "img4";
+    align-items: center;
+    justify-content: center;
+    padding-top: 1vw; }
+    .grillaInicio img {
+      height: 80vw;
+      margin: 0 auto; } }
 
 * {
   padding: 0;

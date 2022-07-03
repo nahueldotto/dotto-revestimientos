@@ -1,145 +1,157 @@
 /* main INDEX */
 
- 
+
+.portada img {
+  width: 100%;
+  margin-top: 50px;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.21);
+}
+
+.tituloInicio {
+
+  h1 {
+    @extend %titulos;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+}
+
+.grillaInicio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img1 txt1"
+    "txt2 img2"
+    "img3 txt3"
+    "txt4 img4";
+  align-items: center;
+  padding-top: 1vw;
+
+  img {
+    height: 20vw;
+    margin: 0 auto;
+    border-radius: 1%;
+
+
+    &:hover {
+      transform: scale(115%);
+      transition: 0.4s;
+      filter: drop-shadow(5px 5px 5px #000);
+    }
+  }
+
+  p {
+    font-size: 2vw;
+    padding: 2vw;
+    font-family: 'Varela Round', sans-serif;
+    text-overflow: inherit;
+    text-align: center;
+  }
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.txt1 {
+  grid-area: txt1;
+}
+
+.txt2 {
+  grid-area: txt2;
+}
+
+.txt3 {
+  grid-area: txt3;
+}
+
+.txt4 {
+  grid-area: txt4;
+}
+
+.tituloGaleriaInicio {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5vw 2vw 0vw 2vw;
+  width: 50vw;
+
+  h2 {
+    font-size: 3vw;
+    font-family: 'Questrial', sans-serif;
+    color: #564E58;
+    filter: drop-shadow(1px 3px 2px #564E58);
+  }
+}
+
+.btn a {
+  text-decoration: none;
+  color: #564E58;
+}
+
+.galeriaInicio {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding-bottom: 5vw;
+  margin: 0 auto;
+  justify-content: center;
+
+  img {
+    width: 20vw;
+    border-radius: 2%;
+    margin: 0 auto;
+
+    &:hover {
+      transform: scale(110%);
+      filter: drop-shadow(5px 5px 5px #000);
+      transition: 0.3s;
+    }
+  }
+}
+
+
+/* MEDIAS QUERIES */
+@media (max-width: 425px) {
+
   .portada img {
     width: 100%;
     margin-top: 50px;
-    box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.21);
-    -webkit-box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.21);
-    -moz-box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.21);
   }
-  
-  .tituloInicio {
-  
-    h1 {
-     @extend %titulos;
-     padding-top: 10%;
-     padding-bottom: 5%;
-    }
-  }
-  
+
+
   .grillaInicio {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "img1 txt1" 
-    "txt2 img2" 
-    "img3 txt3" 
-    "txt4 img4";
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img1"
+      "txt1"
+      "txt2"
+      "img2"
+      "img3"
+      "txt3"
+      "txt4"
+      "img4";
     align-items: center;
-    padding-top: 1vw;
-  
-    img {
-      height: 20vw;
-      margin: 0 auto;
-      border-radius: 1%;
-      
-  
-      &:hover {
-        transform: scale(115%);
-        transition: 0.4s;
-        filter: drop-shadow(5px 5px 5px #000);
-      }
-    }
-  
-    p {
-      font-size: 2vw;
-      padding: 2vw;
-      font-family: 'Varela Round', sans-serif;
-      text-overflow: inherit;
-      text-align: center;
-    }
-  }
-  
-  .img1 {
-    grid-area: img1;
-  }
-  
-  .img2 {
-    grid-area: img2;
-  }
-  
-  .img3 {
-    grid-area: img3;
-  }
-  
-  .img4 {
-    grid-area: img4;
-  }
-  
-  .txt1 {
-    grid-area: txt1;
-  }
-  
-  .txt2 {
-    grid-area: txt2;
-  }
-  
-  .txt3 {
-    grid-area: txt3;
-  }
-  
-  .txt4 {
-    grid-area: txt4;
-  }
-  
-  .tituloGaleriaInicio {
-    text-align: center;
-    margin: 0 auto;
-    padding: 5vw 2vw 0vw 2vw;
-    width: 50vw;
-  
-    h2 {
-      font-size: 3vw;
-      font-family: 'Questrial', sans-serif;
-      color: #564E58;
-      filter: drop-shadow(1px 3px 2px #564E58);
-    }
-  }
-  
-  .btn a {
-    text-decoration: none;
-    color: #564E58;
-  }
-  
-  .galeriaInicio {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    padding-bottom: 5vw;
-    margin: 0 auto;
     justify-content: center;
-  
+    padding-top: 1vw;
+
     img {
-      width: 20vw;
-      border-radius: 2%;
+      height: 80vw;
       margin: 0 auto;
-  
-      &:hover {
-        transform: scale(110%);
-        filter: drop-shadow(5px 5px 5px #000);
-        transition: 0.3s;
-      }
     }
   }
-  
-
-  /* MEDIAS QUERIES */
-@media (max-width: 425px) {
-
-    /* Q main INDEX */
-  
-    .main {
-      a {
-        font-size: 4vw;
-      }
-  
-      li:hover {
-        background-color: grey;
-      }
-  
-      a:hover {
-        color: #5a5044;
-      }
-    }
 }
