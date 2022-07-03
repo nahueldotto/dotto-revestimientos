@@ -8,8 +8,9 @@
   -moz-box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.21); }
 
 .tituloInicio h1 {
-  padding-top: 10%;
-  padding-bottom: 5%; }
+  font-size: 5rem;
+  padding-top: 5%;
+  padding-bottom: 1%; }
 
 .grillaInicio {
   display: grid;
@@ -18,19 +19,24 @@
   align-items: center;
   padding-top: 1vw; }
   .grillaInicio img {
-    width: 30vw;
+    height: 30vw;
     margin: 0 auto;
-    border-radius: 1%; }
+    border-radius: 1%;
+    filter: grayscale(100%);
+    transition: 0.6s; }
     .grillaInicio img:hover {
       transform: scale(115%);
       transition: 0.4s;
       filter: drop-shadow(5px 5px 5px #000); }
   .grillaInicio p {
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 2vw;
     font-family: 'Varela Round', sans-serif;
     text-overflow: inherit;
-    text-align: center; }
+    text-align: center;
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin: 5vw; }
 
 .img1 {
   grid-area: img1; }
@@ -89,16 +95,33 @@
 
 /* MEDIAS QUERIES */
 @media (max-width: 425px) {
+  .tituloInicio h1 {
+    font-size: 2rem; }
   .grillaInicio {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "img1" "txt1" "txt2" "img2" "img3" "txt3" "txt4" "img4";
+    grid-template-areas: "img1" "txt1" "img2" "txt2" "img3" "txt3" "img4" "txt4";
     align-items: center;
     justify-content: center;
     padding-top: 1vw; }
+    .grillaInicio p {
+      font-size: 1rem; }
     .grillaInicio img {
       height: 80vw;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      filter: grayscale(0%); }
+  .tituloGaleriaInicio h2 {
+    font-size: 3rem; }
+  .galeriaInicio {
+    width: 90%;
+    padding-bottom: 5vw;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .galeriaInicio img {
+      width: 80vw;
+      padding: 1%; } }
 
 * {
   padding: 0;
@@ -412,7 +435,6 @@ nav {
       font-size: 2vw; } }
 
 .tituloInicio h1, .grillaProductos h1, .mainGaleria h1, .contacto h1, .presupuestos h1 {
-  font-size: 4vw;
   text-align: center;
   font-family: 'Questrial', sans-serif;
   color: #564E58;
