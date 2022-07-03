@@ -14,13 +14,13 @@
   align-items: center;
   padding-top: 1vw; }
   .grillaInicio img {
-    height: 35vw;
+    height: 20vw;
     margin: 0 auto;
-    border-radius: 1%;
-    filter: drop-shadow(5px 5px 5px #000); }
+    border-radius: 1%; }
     .grillaInicio img:hover {
       transform: scale(115%);
-      transition: 0.3s; }
+      transition: 0.4s;
+      filter: drop-shadow(5px 5px 5px #000); }
   .grillaInicio p {
     font-size: 2vw;
     padding: 2vw;
