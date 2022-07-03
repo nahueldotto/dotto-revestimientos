@@ -1,4 +1,3 @@
-
 // faltan los imports
 @import "./views/index";
 @import "./base/reset";
@@ -15,5 +14,5 @@
 body {
     min-height: 100vh;
     position: relative;
-    background-color: $colorSecundario;
+    background: $colorSecundario;
 }

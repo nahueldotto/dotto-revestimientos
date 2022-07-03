@@ -1,7 +1,10 @@
 /* main INDEX */
 .portada img {
   width: 100%;
-  filter: drop-shadow(-5px 10px 15px #000000); }
+  margin-top: 50px;
+  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.21); }
 
 .tituloInicio h1 {
   padding-top: 10%;
@@ -10,7 +13,7 @@
 .grillaInicio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "img1 txt1" "txt2 img2" "img3 txt3" "txt4 img4";
+  grid-template-areas: "img1 txt1"  "txt2 img2"  "img3 txt3"  "txt4 img4";
   align-items: center;
   padding-top: 1vw; }
   .grillaInicio img {
@@ -139,9 +142,11 @@ nav {
   width: 100%; }
   .menuFooter ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: center;
-    margin-top: 0.5em; }
+    margin-top: 0.5em;
+    padding: 0; }
     .menuFooter ul a {
       margin-top: auto;
       padding: 0.3em;
@@ -154,6 +159,7 @@ nav {
 /* NEWSLETTER */
 .newsletter {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   align-items: center; }
@@ -411,4 +417,4 @@ nav {
 body {
   min-height: 100vh;
   position: relative;
-  background-color: #c6c6c6; }
+  background: #c6c6c6; }
