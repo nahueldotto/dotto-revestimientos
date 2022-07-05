@@ -310,8 +310,9 @@ nav {
   flex-direction: column;
   height: 100%;
   align-items: center;
-  justify-content: center;
-  padding: 3%; }
+  justify-content: center; }
+  .contacto p {
+    margin: 0; }
 
 .txtWsp {
   font-family: 'Varela Round', sans-serif;
@@ -322,17 +323,15 @@ nav {
 
 .wsp {
   text-align: center;
-  padding: 2%;
   width: 100%; }
   .wsp a {
     text-decoration: none;
     font-size: 3vw;
-    color: #5a5044; }
+    color: #564E58; }
 
 .formulario {
   grid-area: formulario;
-  width: 80%;
-  padding: 2%; }
+  width: 80%; }
 
 .form {
   display: flex;
@@ -375,31 +374,39 @@ nav {
       color: #564E58; }
 
 /* MEDIAS QUERIES */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   /* Q SECCION CONTACTO */
   .mainContacto {
     grid-template-columns: 1fr;
-    grid-template-areas: "contacto" "formulario";
-    padding-top: 10%; }
+    grid-template-areas: "contacto" "formulario";
+    padding-top: 15%; }
   .contacto {
     padding-top: 5%; }
   .wsp a {
     font-size: 10vw; }
   .txtWsp {
     font-size: 4vw; }
-  .form p {
-    font-size: 4vw; }
-  .form input {
-    height: 6vw;
-    width: 80%;
-    border-radius: 5px;
-    margin-top: 2vw;
-    font-size: 3vw; }
-  .form textarea {
-    font-size: 3vw;
-    width: 80%;
-    margin: 4%;
-    border-radius: 5px; } }
+  .formulario {
+    width: 100%; }
+  .form {
+    margin-bottom: 2vw; }
+    .form p {
+      font-size: 4vw; }
+    .form input {
+      height: 6vw;
+      width: 80%;
+      border-radius: 5px;
+      margin-top: 2vw;
+      font-size: 3vw; }
+    .form textarea {
+      font-size: 3vw;
+      width: 80%;
+      margin: 4%;
+      border-radius: 5px; }
+    .form input[type=submit] {
+      width: 50%;
+      height: 10vw;
+      font-size: 3vw; } }
 
 /* seccion PRESUPUESTOS */
 .presupuestos {

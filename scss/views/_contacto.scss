@@ -3,148 +3,167 @@
 
 
 .mainContacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "contacto formulario";
-    width: 100%;
-    min-height: 100vh;
-    background-color: $colorSecundario;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contacto formulario";
+  width: 100%;
+  min-height: 100vh;
+  background-color: $colorSecundario;
+  justify-items: center;
+  align-items: center;
+}
+
+.contacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    @extend %titulos;
+  }
+
+  p{
+    margin: 0;
+  }
+}
+
+.txtWsp {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  color: #000;
+  font-size: 2vw;
+  padding: 0% 5% 5% 5%;
+}
+
+.wsp {
+  text-align: center;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    font-size: 3vw;
+    color: $colorPrincipal;
   }
   
-  .contacto {
-    grid-area: contacto;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 3%;
-    h1{
-      @extend %titulos;
-    }
-  }
-  
-  .txtWsp {
+}
+
+.formulario {
+  grid-area: formulario;
+  width: 80%;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  p {
     font-family: 'Varela Round', sans-serif;
-    text-align: center;
-    color: #000;
     font-size: 2vw;
-    padding: 0% 5% 5% 5%;
-  }
-  
-  .wsp {
+    padding: 2%;
     text-align: center;
-    padding: 2%;
-    width: 100%;
-  
-    a {
-      text-decoration: none;
-      font-size: 3vw;
-      color: #5a5044;
-    }
   }
-  
-  .formulario {
-    grid-area: formulario;
+
+  input {
+    height: 3vw;
     width: 80%;
-    padding: 2%;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    margin-top: 1vw;
+    border-width: 0px;
+    font-size: 1.5vw;
+    outline: none;
   }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
+
+  textarea {
+    font-size: 1.5vw;
     width: 100%;
-    align-items: center;
-  
-    p {
-      font-family: 'Varela Round', sans-serif;
-      font-size: 2vw;
-      padding: 2%;
-      text-align: center;
-    }
-  
-    input {
-      height: 3vw;
-      width: 80%;
-      border-radius: 15px;
-      background-color: white;
-      text-align: center;
-      margin-top: 1vw;
-      border-width: 0px;
-      font-size: 1.5vw;
-      outline: none;
-    }
-  
-    textarea {
-      font-size: 1.5vw;
-      width: 100%;
-      margin: 2%;
-      height: 50%;
-      border-radius: 10px;
-      outline: none;
-      border-width: 1px;
-    }
-  
-    input[type=submit] {
-      width: 30%;
-      font-size: 1vw;
-      padding: 0.5vw;
-      margin-top: 1vw;
-      background-color: #5a504460;
-      border: 1px solid #000;
-      border-radius: 1vw;
-  
-      &:hover {
-        background-color: $colorSecundario;
-        color: $colorPrincipal;
-      }
-    }
+    margin: 2%;
+    height: 50%;
+    border-radius: 10px;
+    outline: none;
+    border-width: 1px;
   }
 
-  /* MEDIAS QUERIES */
-@media (max-width: 425px) {
+  input[type=submit] {
+    width: 30%;
+    font-size: 1vw;
+    padding: 0.5vw;
+    margin-top: 1vw;
+    background-color: #5a504460;
+    border: 1px solid #000;
+    border-radius: 1vw;
+
+    &:hover {
+      background-color: $colorSecundario;
+      color: $colorPrincipal;
+    }
+  }
+}
+
+/* MEDIAS QUERIES */
+@media (max-width: 768px) {
 
 
-    /* Q SECCION CONTACTO */
-  
-    .mainContacto {
-      grid-template-columns: 1fr;
-      grid-template-areas: "contacto" "formulario";
-      padding-top: 10%;
-    }
-  
-    .contacto {
-      padding-top: 5%;
-    }
-  
-    .wsp a {
-      font-size: 10vw;
-    }
-  
-    .txtWsp {
+  /* Q SECCION CONTACTO */
+
+  .mainContacto {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "contacto"
+    "formulario";
+    padding-top: 15%;
+  }
+
+  .contacto {
+    padding-top: 5%;
+  }
+
+  .wsp a {
+    font-size: 10vw;
+  }
+
+  .txtWsp {
+    font-size: 4vw;
+  }
+
+  .formulario {
+    width: 100%;
+   }
+
+  .form {
+
+    margin-bottom: 2vw;
+
+    p {
       font-size: 4vw;
     }
-  
-    .form {
-      p {
-        font-size: 4vw;
-      }
-  
-      input {
-        height: 6vw;
-        width: 80%;
-        border-radius: 5px;
-        margin-top: 2vw;
-        font-size: 3vw;
-      }
-  
-      textarea {
-        font-size: 3vw;
-        width: 80%;
-        margin: 4%;
-        border-radius: 5px;
-      }
+
+    input {
+      height: 6vw;
+      width: 80%;
+      border-radius: 5px;
+      margin-top: 2vw;
+      font-size: 3vw;
     }
+
+    textarea {
+      font-size: 3vw;
+      width: 80%;
+      margin: 4%;
+      border-radius: 5px;
+    }
+
+    input[type=submit] {
+      width: 50%;
+      height: 10vw;
+      font-size: 3vw;
+    }
+  }
 }
