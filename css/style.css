@@ -1,3 +1,9 @@
+.tituloInicio h1, .grillaProductos h1, .mainGaleria h1, .contacto h1, .presupuestos h1 {
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+  color: #564E58;
+  filter: drop-shadow(1px 3px 2px #564E58); }
+
 /* main INDEX */
 .portada img {
   width: 100%;
@@ -135,9 +141,19 @@
 nav {
   background-color: #564E58; }
 
+.nav-link {
+  padding: 10px;
+  margin: 10px; }
+
 .logo {
-  font-size: 2.5em;
-  padding: 0%; }
+  width: 40%;
+  margin: 0 auto;
+  padding: 0 auto; }
+  .logo img {
+    width: 30%;
+    margin: 0 auto; }
+    .logo img:hover {
+      transform: scale(110%); }
 
 .nav-link:hover {
   background-color: grey; }
@@ -145,14 +161,13 @@ nav {
 /* MEDIAS QUERIES */
 @media (max-width: 425px) {
   /*Q NAV */
-  .nav {
-    flex-direction: column; }
-    .nav h1 a {
-      font-size: 5vw; }
-    .nav li {
-      padding: 3vw; }
-    .nav a {
-      font-size: 3vw; } }
+  .logo {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center; }
+    .logo img {
+      width: 40%; } }
 
 /* FOOTER */
 .footer {
@@ -442,12 +457,6 @@ nav {
     .presupuestos input[type=submit] {
       width: 15%;
       font-size: 2vw; } }
-
-.tituloInicio h1, .grillaProductos h1, .mainGaleria h1, .contacto h1, .presupuestos h1 {
-  text-align: center;
-  font-family: 'Questrial', sans-serif;
-  color: #564E58;
-  filter: drop-shadow(1px 3px 2px #564E58); }
 
 body {
   min-height: 100vh;

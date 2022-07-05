@@ -1,4 +1,6 @@
 // faltan los imports
+@import "./base/colors";
+@import "./base/extend";
 @import "./views/index";
 @import "./base/reset";
 @import "./base/typo";
@@ -8,8 +10,8 @@
 @import "./views/galeria";
 @import "./views/contacto";
 @import "./views/presupuestos";
-@import "./base/colors";
-@import "./base/extend";
+
+
 
 body {
     min-height: 100vh;
