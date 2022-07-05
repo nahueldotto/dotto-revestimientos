@@ -2,7 +2,7 @@
   text-align: center;
   font-family: 'Questrial', sans-serif;
   color: #564E58;
-  filter: drop-shadow(1px 3px 2px #564E58); }
+  filter: drop-shadow(2px 1px 3px #564E58); }
 
 /* main INDEX */
 .portada img {
@@ -412,11 +412,13 @@ nav {
 .presupuestos {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 10%;
   padding-bottom: 2rem;
   align-items: center;
   background-color: #c6c6c6; }
+  .presupuestos h1 {
+    padding-top: 5vw; }
   .presupuestos p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2vw;
@@ -462,8 +464,9 @@ nav {
       height: 50%;
       font-size: 2vw; }
     .presupuestos input[type=submit] {
-      width: 15%;
-      font-size: 2vw; } }
+      width: 30%;
+      height: 10vw;
+      font-size: 5vw; } }
 
 body {
   min-height: 100vh;

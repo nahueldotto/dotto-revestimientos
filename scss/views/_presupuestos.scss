@@ -3,7 +3,7 @@
 .presupuestos {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 10%;
   padding-bottom: 2rem;
   align-items: center;
@@ -11,6 +11,7 @@
 
   h1 {
     @extend %titulos;
+    padding-top: 5vw;
   }
 
   p {
@@ -85,8 +86,9 @@
     }
 
     input[type=submit] {
-      width: 15%;
-      font-size: 2vw;
+      width: 30%;
+      height: 10vw;
+      font-size: 5vw;
     }
   }
 }
