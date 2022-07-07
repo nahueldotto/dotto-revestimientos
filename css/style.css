@@ -1,17 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
 .tituloInicio h1, .grillaProductos h1, .mainGaleria h1, .contacto h1, .presupuestos h1 {
   text-align: center;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #564E58;
-  filter: drop-shadow(2px 1px 3px #564E58); }
+  filter: drop-shadow(2px 1px 2px #564E58); }
 
 /* main INDEX */
-.portada img {
+.portada {
   width: 100%;
-  margin-top: 50px;
-  object-fit: cover;
-  box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.21);
-  -webkit-box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.21);
-  -moz-box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.21); }
+  height: 40vw;
+  background-image: url(/img/banner-dotto-2.jpg);
+  background-size: cover;
+  margin: 0 auto;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75); }
 
 .tituloInicio h1 {
   font-size: 5rem;
@@ -36,7 +43,7 @@
   .grillaInicio p {
     font-size: 3vw;
     padding: 2vw;
-    font-family: 'Varela Round', sans-serif;
+    font-family: "Mulish", sans-serif;
     text-overflow: inherit;
     text-align: center;
     border: solid 1px grey;
@@ -74,9 +81,10 @@
   width: 50vw; }
   .tituloGaleriaInicio h2 {
     font-size: 3vw;
-    font-family: 'Questrial', sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
     color: #564E58;
-    filter: drop-shadow(1px 3px 2px #564E58); }
+    filter: drop-shadow(2px 1px 2px #564E58); }
 
 .btn a {
   text-decoration: none;
@@ -99,7 +107,7 @@
       transition: 0.3s; }
 
 /* MEDIAS QUERIES */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .tituloInicio h1 {
     font-size: 2rem; }
   .grillaInicio {
@@ -127,11 +135,6 @@
     .galeriaInicio img {
       width: 80vw;
       padding: 1%; } }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
 
 /* HEADER */
 .header {
@@ -240,13 +243,16 @@ nav {
   width: 100%;
   background-color: #c6c6c6;
   padding-top: 10%; }
+  .grillaProductos h1 {
+    font-size: 4vw; }
   .grillaProductos h3 {
     padding: 1vw;
-    font-family: 'Questrial', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 3vw; }
   .grillaProductos p {
     font-size: 1vw;
-    font-family: 'Varela Round', sans-serif; }
+    font-family: "Mulish", sans-serif;
+    font-weight: bold; }
   .grillaProductos div {
     margin: 0 auto;
     padding: 10vw;
@@ -265,6 +271,7 @@ nav {
   margin-top: 10vw;
   margin-bottom: 10%; }
   .mainGaleria h1 {
+    font-family: "Raleway", sans-serif;
     margin-top: 10px;
     font-size: 3rem; }
 
@@ -315,7 +322,7 @@ nav {
     margin: 0; }
 
 .txtWsp {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Mulish", sans-serif;
   text-align: center;
   color: #000;
   font-size: 2vw;
@@ -339,7 +346,7 @@ nav {
   width: 100%;
   align-items: center; }
   .form p {
-    font-family: 'Varela Round', sans-serif;
+    font-family: "Mulish", sans-serif;
     font-size: 2vw;
     padding: 2%;
     text-align: center; }
@@ -418,9 +425,9 @@ nav {
   align-items: center;
   background-color: #c6c6c6; }
   .presupuestos h1 {
-    padding-top: 5vw; }
+    padding-top: 2vw; }
   .presupuestos p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Mulish", sans-serif;
     font-size: 2vw;
     text-align: center;
     padding: 1vw; }

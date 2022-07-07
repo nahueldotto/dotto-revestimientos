@@ -9,6 +9,7 @@
 
   h1 {
    @extend %titulos;
+   font-family: $titulos;
    margin-top: 10px;
    font-size: 3rem;
   }

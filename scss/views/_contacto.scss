@@ -31,7 +31,7 @@
 }
 
 .txtWsp {
-  font-family: 'Varela Round', sans-serif;
+  font-family: $textos;
   text-align: center;
   color: #000;
   font-size: 2vw;
@@ -63,7 +63,7 @@
   align-items: center;
 
   p {
-    font-family: 'Varela Round', sans-serif;
+    font-family: $textos;
     font-size: 2vw;
     padding: 2%;
     text-align: center;

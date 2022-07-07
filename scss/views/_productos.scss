@@ -9,18 +9,20 @@
 
     h1 {
       @extend %titulos;
+      font-size: 4vw;
     }
     
   
     h3 {
       padding: 1vw;
-      font-family: 'Questrial', sans-serif;
+      font-family: $titulos;
       font-size: 3vw;
     }
   
     p {
       font-size: 1vw;
-      font-family: 'Varela Round', sans-serif;
+      font-family: $textos;
+      font-weight: bold;
     }
   
     div {
