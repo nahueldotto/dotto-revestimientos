@@ -91,6 +91,32 @@
   grid-area: txt4;
 }
 
+.tituloInfo {
+  @extend %titulos;
+  margin: 20px;
+}
+
+.faqs {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.accordion-button {
+  background-color: $colorSecundario;
+  border: 1px solid $colorPrincipal;
+}
+
+.accordion-body {
+  background-color: $colorSecundario;
+}
+
+.linea {
+  border-top: 2px solid $colorPrincipal;
+  height: 2px;
+  max-width: 60%;
+  margin: 50px auto 50px auto;
+}
+
 .tituloGaleriaInicio {
   text-align: center;
   margin: 0 auto;

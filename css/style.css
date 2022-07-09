@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box; }
 
-.tituloInicio h1, .grillaProductos h1, .mainGaleria h1, .contacto h1, .presupuestos h1 {
+.tituloInicio h1, .tituloInfo, .grillaProductos h1, .mainGaleria h1, .contacto h1, .presupuestos h1 {
   text-align: center;
   font-family: "Raleway", sans-serif;
   color: #564E58;
@@ -73,6 +73,26 @@
 
 .txt4 {
   grid-area: txt4; }
+
+.tituloInfo {
+  margin: 20px; }
+
+.faqs {
+  max-width: 70%;
+  margin: 0 auto; }
+
+.accordion-button {
+  background-color: #c6c6c6;
+  border: 1px solid #564E58; }
+
+.accordion-body {
+  background-color: #c6c6c6; }
+
+.linea {
+  border-top: 2px solid #564E58;
+  height: 2px;
+  max-width: 60%;
+  margin: 50px auto 50px auto; }
 
 .tituloGaleriaInicio {
   text-align: center;
