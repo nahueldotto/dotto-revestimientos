@@ -117,6 +117,9 @@
   padding-bottom: 5vw;
   margin: 0 auto;
   justify-content: center; }
+  .galeriaInicio a {
+    margin: 0 auto 50px auto;
+    height: 20vw; }
   .galeriaInicio img {
     width: 20vw;
     border-radius: 2%;
