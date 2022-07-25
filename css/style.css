@@ -15,7 +15,7 @@
   height: 40vw;
   background-image: url(/img/banner-dotto-2.jpg);
   background-size: cover;
-  margin: 0 auto;
+  margin: 50px 0 0 0;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.75); }
@@ -118,10 +118,10 @@
   margin: 0 auto;
   justify-content: center; }
   .galeriaInicio a {
-    margin: 0 auto 50px auto;
-    height: 20vw; }
+    margin: 10px;
+    height: 20%; }
   .galeriaInicio img {
-    width: 20vw;
+    width: 100%;
     border-radius: 2%;
     margin: 0 auto; }
     .galeriaInicio img:hover {
@@ -131,6 +131,8 @@
 
 /* MEDIAS QUERIES */
 @media (max-width: 768px) {
+  .portada {
+    margin-top: 50px; }
   .tituloInicio h1 {
     font-size: 2rem; }
   .grillaInicio {
@@ -149,15 +151,15 @@
   .tituloGaleriaInicio h2 {
     font-size: 3rem; }
   .galeriaInicio {
-    width: 90%;
-    padding-bottom: 5vw;
-    margin: 0 auto;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap; }
-    .galeriaInicio img {
-      width: 80vw;
-      padding: 1%; } }
+    width: 100%; }
+    .galeriaInicio a {
+      height: 80%;
+      padding: 1%;
+      text-align: center; }
+      .galeriaInicio a img {
+        width: 75%; } }
 
 /* HEADER */
 .header {
@@ -332,7 +334,8 @@ nav {
   min-height: 100vh;
   background-color: #c6c6c6;
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 50px; }
 
 .contacto {
   grid-area: contacto;
