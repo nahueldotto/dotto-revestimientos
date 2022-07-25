@@ -63,7 +63,7 @@
 }
 
 /* MEDIAS QUERIES */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
 
   /* Q PRESUPUESTOS */
@@ -86,9 +86,9 @@
     }
 
     input[type=submit] {
-      width: 30%;
-      height: 10vw;
-      font-size: 5vw;
+      width: 20%;
+      height: 5vw;
+      font-size: 3vw;      
     }
   }
 }

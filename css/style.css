@@ -187,13 +187,13 @@ nav {
   background-color: grey; }
 
 /* MEDIAS QUERIES */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   /*Q NAV */
   .logo {
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
     padding: 0 auto;
-    text-align: center; }
+    text-align: left; }
     .logo img {
       width: 40%; } }
 
@@ -467,7 +467,7 @@ nav {
       color: #564E58; }
 
 /* MEDIAS QUERIES */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   /* Q PRESUPUESTOS */
   .presupuestos {
     padding-top: 25%; }
@@ -477,9 +477,9 @@ nav {
       height: 50%;
       font-size: 2vw; }
     .presupuestos input[type=submit] {
-      width: 30%;
-      height: 10vw;
-      font-size: 5vw; } }
+      width: 20%;
+      height: 5vw;
+      font-size: 3vw; } }
 
 body {
   min-height: 100vh;

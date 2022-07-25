@@ -37,15 +37,15 @@ nav {
 }
 
 /* MEDIAS QUERIES */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   /*Q NAV */
 
   .logo {
 
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
     padding: 0 auto;
-    text-align: center;
+    text-align: left;
 
     img {
       width: 40%;
