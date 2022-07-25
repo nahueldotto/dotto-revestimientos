@@ -3,7 +3,7 @@
 .mainGaleria {
   background-color: $colorSecundario;
   min-height: 100vh;
-  margin-top: 10vw;
+  margin-top: 100px;
   margin-bottom: 10%;
   
 
@@ -38,10 +38,15 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
   .mainGaleria {
-    padding-top: 15vw;
+    padding-top: 10vw;
+    margin-top: 50px;
+
+    h1 {
+      font-size: 2rem;
+    }
   }
 
   .galeria {
