@@ -1,44 +1,12 @@
 /* seccion PRODUCTOS */
 
 .grillaProductos {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: $colorSecundario;
-    padding-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  
+}
 
-    h1 {
-      @extend %titulos;
-      font-size: 4vw;
-    }
-    
-  
-    h3 {
-      padding: 1vw;
-      font-family: $titulos;
-      font-size: 3vw;
-    }
-  
-    p {
-      font-size: 1vw;
-      font-family: $textos;
-      font-weight: bold;
-    }
-  
-    div {
-      margin: 0 auto;
-      padding: 10vw;
-      text-align: center;
-    }
-  
-    img {
-      width: 90%;
-      border-radius: 10px;
-  
-      &:hover {
-        transform: scale(110%);
-        transition: 0.3s;
-      }
-    }
-  }
   
